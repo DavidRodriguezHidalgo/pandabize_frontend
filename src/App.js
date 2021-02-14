@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./Routes";
+import "./App.css";
+import "react-notifications/lib/notifications.css";
+import Navbar from "./components/layout/Navbar";
+import { NotificationContainer } from "react-notifications";
 
 function App() {
-  console.log(process.env.REACT_APP_BACKEND_API);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NotificationContainer />
+      <Navbar title="Pandabize" />
+      <div style={{ display: "flex" }}>
+        <Routes />
+      </div>
+    </Router>
   );
 }
 

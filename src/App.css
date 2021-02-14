@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+.navbar-background {
+    padding-left: 23px;
+    background: black;
+    min-height: 74px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-background .title-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 25px;
+    display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.brand {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.brand .card {
+    border-radius: 15px;
+    border: 1px solid #eee;
+    width: 300px;
+    display: inline-block;
+    overflow: hidden;
+    padding-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.brand .card img {
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.divider {
+    float: left;
+    max-width: 50%;
+}
+
+.product-features {
+    text-align: center;
+    display: inline-block;
+    width: 70%;
+}
+
+.form-field {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-field label {
+    display: block;
+    position: relative;
+    bottom: 5px;
+}
+
+.form-field select {
+    width: 154px;
+}
+
+.form-field button {
+    margin-left: 105px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(40, 40, 226);
+    border: none;
+    border-radius: 5px;
+}
+
+.order {
+    background-color: wheat;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.order ul {
+    list-style-type: none;
+}
+
+.order-item-row {
+    background-color: rgb(241, 168, 109);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.order-item-row h4 {
+    margin: 0px;
+}
+
+.order-item-features{
+    margin-top: 20px;
 }
